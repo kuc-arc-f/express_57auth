@@ -1,0 +1,6 @@
+{
+  "watch": ["src"],
+  "ext": "ts,tsx,css", 
+  "ignore": ["src/**/*.txt"],
+  "exec": "npm run build && NODE_ENV=develop npm run start"
+}
