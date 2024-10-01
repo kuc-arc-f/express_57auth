@@ -24,6 +24,8 @@ yarn dev
 ***
 ### blog
 
+https://knakatech-blog.pages.dev/posts/165
+
 ***
 # License
 
