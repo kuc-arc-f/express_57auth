@@ -19,6 +19,21 @@ auth CF-KV, example, example
 https://github.com/kuc-arc-f/kv-project2
 
 ***
+### Setup
+
+* KV: KV_URL, KV_API_KEY set
+
+```
+APP_NAME="app123"
+AUTH_USER_MAIL="test1@example.com"
+AUTH_PASSWORD="1111"
+AUTH_USER_ID=1
+
+KV_URL="https://localhost"
+KV_API_KEY= "123"
+```
+
+***
 ### build
 * dev
 ```
