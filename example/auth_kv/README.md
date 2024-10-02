@@ -20,8 +20,8 @@ https://github.com/kuc-arc-f/kv-project2
 
 ***
 ### Setup
-
-* KV: KV_URL, KV_API_KEY set
+* .env
+* KV_URL, KV_API_KEY set
 
 ```
 APP_NAME="app123"
