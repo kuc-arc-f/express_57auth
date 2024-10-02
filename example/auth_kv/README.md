@@ -1,4 +1,4 @@
-﻿# express_57auth
+﻿# auth KV, example
 
  Version: 0.9.1
 
@@ -6,14 +6,17 @@
 
  date   : 2024/10/01
  
- update : 2024/10/02 
+ update :
 
 ***
 
-Express.js + esbuild , example
+auth CF-KV, example, example
 
 ***
-### stackblitz
+### KV
+* CF-KV + workers
+
+https://github.com/kuc-arc-f/kv-project2
 
 ***
 ### build
@@ -26,10 +29,6 @@ yarn dev
 
 ***
 ### blog
-
-***
-#### Change Log
-* VER_0_9_1: new project
 
 ***
 # License
