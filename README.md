@@ -10,12 +10,13 @@
 
 ***
 
-Express.js + esbuild , example
+Express.js + esbuild + React, example
 
 ***
 ### example
 
 * auth_session: file session, example
+* auth_kv: CF-KV auth, example
 
 ***
 ### build
