@@ -17,6 +17,7 @@ Express.js + esbuild + React, example
 
 * auth_session: file session, example
 * auth_kv: CF-KV auth, example
+* auth_cookie: auth cookie example
 
 ***
 ### build

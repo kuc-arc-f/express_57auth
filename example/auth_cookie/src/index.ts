@@ -19,6 +19,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static('public'));
+console.log("env= ", process.env.NODE_ENV);
+console.log("APP_NAME= ", process.env.APP_NAME);
+console.log("AUTH_USER_ID= ", process.env.AUTH_USER_ID);
+console.log("AUTH_EXPIRED_TIME= ", process.env.AUTH_EXPIRED_TIME);
  
 // Session
 app.use(session({
@@ -26,14 +30,11 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   cookie: {
-    maxAge: 1000 * 60 * 60,  // クッキーの有効期限をn-minに設定(msec * sec * min)
+    maxAge: 1000 * 60 * Number(process.env.AUTH_EXPIRED_TIME),  // クッキーの有効期限をn-minに設定(msec * sec * min)
     //httpsを使用しない
     secure: false
   }
  }));
-console.log("env= ", process.env.NODE_ENV);
-console.log("AUTH_USER_ID= ", process.env.AUTH_USER_ID);
-console.log("APP_NAME= ", process.env.APP_NAME);
 //
 const errorObj = {ret: 500 , messase: "Error"};
 //middleware

@@ -35,5 +35,23 @@ console.log("AUTH_USER_MAIL= ", process.env.AUTH_USER_MAIL);
     res.sendStatus(500);
   }
 });
-
+/**
+* 
+* @param
+*
+* @return
+*/ 
+router.post('/logout', async function(req: any, res: any) {
+  const retObj = {ret: 500, message: ""};
+  try {
+//console.log("AUTH_PASSWORD= ", process.env.AUTH_PASSWORD);
+    retObj.ret = 200;
+    const key = process.env.APP_NAME + "_auth"
+    res.clearCookie(key);
+    return res.json(retObj)
+  } catch (error) {
+    console.error(error);
+    res.sendStatus(500);
+  }
+});
 export default router;
