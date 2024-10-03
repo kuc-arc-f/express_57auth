@@ -21,6 +21,8 @@ APP_NAME="express_57"
 AUTH_USER_MAIL="test1@example.com"
 AUTH_PASSWORD="1234"
 AUTH_USER_ID=1
+# EXPIRED_TIME: min set
+AUTH_EXPIRED_TIME=120
 ```
 
 ***
